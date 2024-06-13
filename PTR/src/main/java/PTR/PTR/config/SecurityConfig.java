@@ -40,7 +40,8 @@ public class SecurityConfig {
                                 new AntPathRequestMatcher("/feedComment/**"),
                                 new AntPathRequestMatcher("/feedScrap/**"),
                                 new AntPathRequestMatcher("/userFollow/**"),
-                                new AntPathRequestMatcher("/feedCommentLike/**")
+                                new AntPathRequestMatcher("/feedCommentLike/**"),
+                                new AntPathRequestMatcher("/calendar/**")
                         ).permitAll()
                         .anyRequest().authenticated()) // 모든 요청에 인증을 받음
                 .formLogin(form->form.loginPage("/login").defaultSuccessUrl("/articles")) // formLogin : 정적 로그인 페이지가 존재하는 경우 사용 , defaultSuccessUrl : 로그인 성공시 /articles로  로그인 페이지를 직접 만들기 위함
