@@ -20,11 +20,11 @@ public class CalendarDietPlan {
     @JoinColumn(name = "calendar_id")
     private Calendar calendar;
     @Column
-    private int carbohydrate;
+    private int carbohydrate; //탄
     @Column
-    private int protein;
+    private int protein; //단
     @Column
-    private int fat;
+    private int fat; //지
     @Column
-    private String detail;
+    private String detail; //세부
 }

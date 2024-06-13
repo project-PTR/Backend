@@ -20,12 +20,12 @@ public class CalendarController {
     }
 
     @GetMapping("/calendar")
-    public Optional<Calendar> getcalendar(@RequestBody Calendar calendar){
+    public Optional<Calendar> getCalendar(@RequestBody Calendar calendar){
         return calendarService.getCalendar(calendar);
     }
 
     @DeleteMapping("/calendar")
-    public void deletecalendar(@RequestBody Calendar calendar){
+    public void deleteCalendar(@RequestBody Calendar calendar){
         calendarService.deleteCalendar(calendar);
     }
 
